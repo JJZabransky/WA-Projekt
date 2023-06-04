@@ -15,6 +15,10 @@ switch ($request) {
     case '/download':
         $redirect = '/views/download.php';
         break;
+
+    case '/login':
+        $redirect = '/views/login.php';
+        break;
     
     default:
         http_response_code(404);
