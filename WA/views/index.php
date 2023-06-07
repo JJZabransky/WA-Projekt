@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
     <title>TheSquadGame</title>
     
 </head>
 <body>
 <?php echo $_SESSION['site'] ?>
-<header class="p-3 text-bg-dark">
+<header class="p-3">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <p class="h4">Squad</p>
@@ -32,17 +35,22 @@
     </div>
   </header>
 
-  <div class="p-3">
+  <div class="p-3 text-center">
   <h1>Home</h1>
   <p class="h4">Welcome to the official Squad game website</p>
   </div>
 
-  <div class="p-3">
+  <div class="container justify-content-center text-center">
+    <h2>Joke of the Day</h2>
+    <p id="text" class="h4">LOL</p>
+  </div>
+
+  <div class="p-3 text-center">
     <h2>About Game</h2>
     <p>In this 2D topdown shooter the player will experience difficult challanges, but also cool story, throughout game's 3 different levels.</p>
   </div>
 
-<div class="p-3">
+<div class="p-3 text-center">
   <h2>Preview</h2>
   <div id="carouselCaptions" class="carousel slide">
   <div class="carousel-indicators">
@@ -74,12 +82,7 @@
 </div>
 
   <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="index.php" class="nav-link px-2 text-body-secondary">Home</a></li>
-      <li class="nav-item"><a href="aboutus.php" class="nav-link px-2 text-body-secondary">About Us</a></li>
-      <li class="nav-item"><a href="download.php" class="nav-link px-2 text-body-secondary">Download</a></li>
-    </ul>
-    <p class="text-center text-body-secondary">© 2023 Jan Jakub Zábranský</p>
+    <p class="text-center">© 2023 Jan Jakub Zábranský</p>
   </footer>
 </body>
 </html>
